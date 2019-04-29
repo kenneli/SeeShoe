@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form>
+    <ion-input [(ngModel)]="name" [ngModelOptions]="{standalone: true}" style="border-bottom: 1px solid rgba(0,0,0,0.25)" placeholder="Name" ></ion-input>
+    <ion-input [(ngModel)]="username" [ngModelOptions]="{standalone: true}" style="border-bottom: 1px solid rgba(0,0,0,0.25)" placeholder="Username" ></ion-input>
+    <ion-input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" style="border-bottom: 1px solid rgba(0,0,0,0.25)" placeholder="Password"></ion-input>
+    <ion-button expand="block" (click)="onCreateAccount()">create</ion-button>
+  </form>
+  <p>Already have an account ? <a (click)="goToLogin()">Login</a></p>
+</ion-content>

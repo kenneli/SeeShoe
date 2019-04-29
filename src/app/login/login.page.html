@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form>
+    <ion-input [(ngModel)]="username" [ngModelOptions]="{standalone: true}" style="border-bottom: 1px solid rgba(0,0,0,0.25)" placeholder="Username" ></ion-input>
+    <ion-input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" style="border-bottom: 1px solid rgba(0,0,0,0.25)" placeholder="Password"></ion-input>
+    <ion-button expand="block" (click)="onLogin()">login</ion-button>
+  </form>
+  <p>Don't have an account ? <a (click)="goToCreate()">Create Account</a></p>
+</ion-content>

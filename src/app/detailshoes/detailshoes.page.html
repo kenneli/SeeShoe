@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="goBack()">
+      <ion-button>
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{ shoes.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides pager>
+    <ion-slide *ngFor="let img of shoes.images">
+      <img style="width: 100%;margin: auto;" src="http://localhost:3000/images/{{ img }}">
+    </ion-slide>
+  </ion-slides>
+  <h1>{{ shoes.name }}</h1>
+  <p>
+    {{ shoes.description }}
+  </p>
+  <hr style="border-bottom: 1px solid #ccc">
+  <ion-button expand="block" (click)="addToCart()">tambahkan ke favorite</ion-button>
+</ion-content>

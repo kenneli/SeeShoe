@@ -1,0 +1,7 @@
+{
+  "name": "SeeShoe-Ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
