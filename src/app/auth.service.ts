@@ -10,17 +10,17 @@ export class AuthService {
   // host = 'https://seeshoe-server.herokuapp.com';
   host = 'https://seeshoe-server.herokuapp.com';
 
-  login(username, password) {
+  login(email, password) {
     return this.http.post(`${this.host}/api/user/login`, {
-      username,
+      email,
       password
     });
   }
 
-  createAccount(name, username, password) {
+  createAccount(nama, email, password) {
     return this.http.post(`${this.host}/api/user/create-account`, {
-      name,
-      username,
+      nama,
+      email,
       password,
       level: 'buyer'
     });
