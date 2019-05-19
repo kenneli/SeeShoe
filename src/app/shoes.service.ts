@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ShoesService {
   // host = 'https://seeshoe-server.herokuapp.com';
-  host = 'http://localhost:3000';
+  host = 'https://seeshoe-server.herokuapp.com';
 
   constructor(public http: Http) { }
 

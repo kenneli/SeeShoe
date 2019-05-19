@@ -8,7 +8,7 @@ export class AuthService {
 
   constructor(public http: Http) { }
   // host = 'https://seeshoe-server.herokuapp.com';
-  host = 'http://localhost:3000';
+  host = 'https://seeshoe-server.herokuapp.com';
 
   login(username, password) {
     return this.http.post(`${this.host}/api/user/login`, {

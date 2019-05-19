@@ -20,7 +20,7 @@
     <ion-row>
       <ion-col size="6" *ngFor="let sh of shoesList">
         <ion-card (click)="goToDetail(sh.id)">
-          <img style="padding: 8px;" src="http://localhost:3000/images/{{ sh.images[0] }}">
+          <img style="padding: 8px;" src="https://seeshoe-server.herokuapp.com/images/{{ sh.images[0] }}">
           <div style="padding: 8px 16px">
             <h1 style="text-align: center;">{{ sh.name }}</h1>
             <p style="color: rgba(0,0,0,0.5);text-align: center;">Rp. {{ sh.price }}</p>

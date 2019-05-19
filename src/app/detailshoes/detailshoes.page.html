@@ -12,7 +12,7 @@
 <ion-content padding>
   <ion-slides pager>
     <ion-slide *ngFor="let img of shoes.images">
-      <img style="width: 100%;margin: auto;" src="http://localhost:3000/images/{{ img }}">
+      <img style="width: 100%;margin: auto;" src="https://seeshoe-server.herokuapp.com/images/{{ img }}">
     </ion-slide>
   </ion-slides>
   <h1>{{ shoes.name }}</h1>
